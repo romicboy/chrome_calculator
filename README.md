@@ -1,1 +1,2 @@
 # chrome_calculator
+这是一个复息计算器chrome插件

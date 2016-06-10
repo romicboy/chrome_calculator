@@ -1,0 +1,45 @@
+{
+    "manifest_version": 2,
+    "name": "复利计算器",
+    "description": "复利计算器",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "common/jquery.js",
+                "common/loger.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "background": {
+        "scripts": [
+            "common/jquery.js",
+            "common/loger.js",
+            "application/background/background.js"
+        ]
+    },
+    "permissions": [
+        "tabs",
+        "storage",
+        "contextMenus",
+        "browsingData",
+        "http://m.mei.me/"
+    ],
+    "icons": {
+        "16": "images/ic_launcher_16.png",
+        "32": "images/ic_launcher_32.png",
+        "48": "images/ic_launcher_48.png",
+        "128": "images/ic_launcher_128.png"
+    },
+    "browser_action": {
+        "default_icon": "images/ic_launcher_19.png",
+        "default_title": "复利计算器"
+    },
+    "options_page": "application/options/html/options.html",
+    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
+}
