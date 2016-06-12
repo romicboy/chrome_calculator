@@ -1,2 +1,2 @@
 # chrome_calculator
-这是一个复利计算器chrome插件
+这是一个复利计算器的chrome插件
